@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            text-align: center;
+        }
+        /* div li p{
+            color: blueviolet;
+            background-color: aquamarine;
+            font-weight: bold;
+        } */
+           /* > symbol means ky div ky direct child pr yeh property lago hogi means div ka direct child p hai or jo <li> ky ander para hai us pr lago nhi hooga */
+        div > p{
+            color: blueviolet;
+            background-color: aquamarine;
+            font-weight: bold;
+        }
+         /* + means ky yeh property sirf us <p> pr affect kary gi jis ka sibling div ho  */
+         div + p {
+             background-color: rgb(233, 150, 72);
+             color: blue;
+         }
+
+    </style>
+</head>
+<body>
+   <h1>This is more on Selectors</h1> 
+   <div class="container">
+       <div class="row">
+           <ul>
+               <li class="item"><p>this is paragraph</p></li>
+               <li>this will not affected</li>
+               <p>this is a para inside</p>
+           </ul>
+           <p>this is a paragraph</p>
+       </div>
+       <p>this is  another paragraph</p>
+   </div>
+   <p>this is outermost paragraph</p>
+</body>
+</html>

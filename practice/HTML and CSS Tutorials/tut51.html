@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditional</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "this is string1";
+        var string1 = "this is string2";
+        console.log(string1);
+
+        //Variable declared new method is 'let', Let scope is block level scope.
+        // In a block 'a' varaiable declared only once if it repeats error occurs.
+        let a = 'u';
+        {
+           let a = 'u6';
+           console.log(a); 
+        }
+        console.log(a);
+
+        //In 'const' you cannot change the value.
+        const b = 'this varaiable cannot be change';
+        //b = 'I want to change this variable.'
+        console.log(b);
+
+        //conditionals
+        let age = 5;
+        if(age>18){
+            console.log('You can drink pepsi');
+        }
+        else if(age==2){
+            console.log('Age is 2')
+        }
+        else if(age==5){
+            console.log('Age is 5')
+        }
+        else{
+            console.log('You cannot drink pepsi');
+        }
+
+        //Switch 
+        const cups = 41;
+        switch(cups){
+            case 4:
+                console.log("this cup value is 4");
+            break;
+            case 41:
+                console.log("this cup value is 41");
+            break;
+            case 42:
+                console.log("this cup value is 42");
+            break;
+            case 43:
+                console.log("this cup value is 43");
+            break;
+            default:
+                console.log("the value of cup is none 4,41,42,43")
+            break;
+        }
+    </script>
+</body>
+</html>

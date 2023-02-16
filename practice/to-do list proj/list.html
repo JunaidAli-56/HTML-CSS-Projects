@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="list-style.css">
+    <title>Document</title>
+</head>
+
+<body onload="showRecord()">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div id="main" class="container-fluid main-div">
+        <img src="assests/vecteezy_Background_nl1220.jpg" alt="">
+        <div class="left">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        </div>
+        <div class="list-div">
+            <h1 id="title"><i class="fas fa-tasks"></i>&nbsp; Todo List</h1>
+            <div class="filter">
+                <a href="#" class="filter" id="all">All ( <span id="allCount"></span> )</a>
+                <a href="#" class="filter" id="completed">Complete ( <span id="completeCount"></span> )</a>
+                <a href="#" class="filter" id="incomplete">Incomplete ( <span id="incompleteCount"></span> )</a>
+            </div>
+            <ul id="list">
+            <!-- <li class="li">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-trash"></i>
+            </li> -->
+        </ul>
+            <div class="filter">
+                <a href="#" class="filter" id="completeAll"><i class="fas fa-check-double"></i> Complete all task</a>
+                <a href="#" class="filter" id="deleteCompleted">Clear completed</a>
+            </div>
+        </div>
+        <div class="right">
+            <a href="index.html"><i class="fas fa-tasks"></i>&nbsp;Main Page</a>
+            <!-- <h1>Todo List</h1> -->
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/b83b286aac.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

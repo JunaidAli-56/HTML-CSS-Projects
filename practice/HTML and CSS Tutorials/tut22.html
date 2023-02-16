@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesudo selectors & more designing</title>
+    <style>
+            .container{
+                border:6px solid black;
+                background-color: seagreen;
+                padding:23px;
+                margin:23px auto;
+                width: 555px;
+            
+            }
+
+            a{
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+               
+            
+            }
+            /* hover means ky jab cursor red more py jayye ty us ka color change of for example  rebeccapurple color */
+            a:hover{
+                color: rebeccapurple;
+                background-color:black; 
+            }
+            /* agr read more icon ka color yellow ho jaye to vo visited hai.
+            means ky pehly color black tha read more ka jab cursor us py jata tha jab kisi ny usy visit kar lia phir background color yellow ho jaye ga  */
+            a:visited{
+                    /* background-color:yellow;  */
+            }
+
+            a:active{
+                    background-color: rgb(68, 249, 255);
+            }
+
+            .btn{
+                background-color: cadetblue;
+                border:none;
+                padding:6px;
+                cursor: pointer;
+                font-size: 13px;
+                border-radius: 4px;
+                 /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: bold; */
+            }
+            /* .btn:hover{
+                color:rgb(48, 13, 95);
+                background-color:darkgray; 
+                border: 2px solid black; 
+            }  */
+
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+    <h3>This is my paragraph</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt adipisci doloremque aliquid possimus cumque laudantium vitae nemo nisi necessitatibus laboriosam distinctio quis beatae labore nobis officiis, dolore quisquam cum atque veniam! Molestiae, recusandae corporis?</p>
+    <a href="https://www.google.com/" class="btn" > Read more</a>
+    <button class="btn" >Contact us</button>
+
+</div>
+</body>
+</html>
+
+
+<!-- pesudo selectors are  a: hover,a:visitor & a:visited  -->

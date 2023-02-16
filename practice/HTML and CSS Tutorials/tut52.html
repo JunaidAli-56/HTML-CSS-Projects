@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and Objects</title>
+</head>
+<body>
+    <div class="cotainer">
+        just write simple HTML 
+    </div>
+    <script>
+        // Variables 'var' kisi bhi chezz ko store kary ky kam aty hein
+        //In JS there are two values one premitive and one is Reference. ya to permitive datatypes banty hein ya objects datatypes banty hein.
+        //In permittive (integer , String boleen(true,false) and special variable(null and undefined))
+
+        let myVar = 34;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        //objects
+
+        let empolyee = {
+            name:"Jarviz",
+            salary: 10,
+            channel:"CodeWithJarviz",
+        }
+        console.log(empolyee);
+
+        //Array is a special object.
+        
+        let name = [1,2,3,"Jarviz",undefined];
+        console.log(name[0]); 
+
+        //New method to Write Array but its will work same.
+        let name1 = new Array(1,2,3,"Jarviz",undefined);
+        console.log(name1.length); 
+        console.log(name1); 
+
+        //In simple method
+        let name2 = new Array(41,2,3,"Jarviz",undefined);
+
+        //this is push method to push value in array.
+        name2.push("this is pushed");
+        console.log(name2);
+
+        // sorting method
+        let x = new Array(41,2,3,"Jarviz",undefined);
+        name3 = x.sort();
+        console.log(name3);
+
+        let namex = new Array(23);
+        namex.push("this is pushed");
+        console.log(namex);
+
+    </script>
+</body>
+</html>

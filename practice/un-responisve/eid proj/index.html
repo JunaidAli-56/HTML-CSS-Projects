@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            display: flex;
+            background-color: #A10035;
+            justify-content: space-between;
+            position:fixed;
+            z-index: 10;
+            width: 100%;
+        }
+        .logo {
+            color: white;
+            justify-content: flex-start;
+        }
+        ul {
+            display: flex;
+            margin-right: 20px;
+        }
+
+        li {
+            margin-left: 20px;
+            margin-top: 8px;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+            /* background-color: rgb(38, 63, 55); */
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .navbar a:hover {
+            border-bottom: 1px solid white;
+        }
+
+        .main {
+            border: 2px solid red;
+            height: 500px;
+        }
+
+        .main img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .cards {
+            height: 465px;
+            /* border: 0px  8px 0px 8px solid green; */
+            /* background-color: #A10035; */
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .cards123 {
+            /* border: 2px solid black; */
+            height: 400px;
+            width: 360px;
+            margin-top: 35px;
+        }
+
+        .cards .cards123 img {
+            height: 100%;
+            width: 100%;
+            border-radius: 8px;
+            position: relative;
+            /* box-shadow: 5px 10px 20px #A10035; */
+            box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+        }
+
+        .cards123 img:hover {
+            opacity: 0.7;
+            /* box-shadow: rgba(0, 0, 0, 0.984) 0px -50px 36px -28px inset; */
+        }
+
+        .text-block {
+            position: absolute;
+            /* background-color: black; */
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            bottom: 63px;
+        }
+
+        .desc {
+            height: 500px;
+            background-color: #A10035;
+            color: white;
+            position: relative;
+            /* display: flex; */
+        }
+
+        .desc h1 {
+            position: absolute;
+            margin: 100px 0px 0px 40px;
+        }
+
+        .desc p {
+            position: absolute;
+            margin: 150px 0px 0px 40px;
+            font-size: 20px;
+        }
+
+        .image {
+            height: 450px;
+            width: 400px;
+            position: absolute;
+            margin-left: 800px;
+            top: 25px;
+        }
+
+        .image img {
+            height: 100%;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+        }
+        .contact{
+            height: 500px;
+            border: 2px solid blue;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .contact-image{
+            height: 450px;
+            width: 700px;
+            border: 2px solid red;
+        }
+        .contact-image img{
+            height: 100%;
+            width: 100%;
+        }
+        .contact-card{
+            border: 2px solid green;
+            height: 450px;
+            width: 450px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* padding: 0px 20px; */
+            box-sizing: border-box;
+            background-color: #A10035;
+            border-radius: 8px;
+        }
+        .contact-card h1{
+            box-sizing: border-box;
+            margin: 50px 0px 15px 25px;
+            color: white;
+        }
+        .contact-card input{
+            align-self: center;
+            height: 40px;
+            width: 86%;
+            margin-top: 30px;
+            font-size: 20px;
+            border-radius: 8px;
+            border: none;
+            padding-left: 10px;
+        }
+        .contact-btn{
+            height:10%;
+            width:25%;
+            margin-top: 30px;
+            align-self: center;
+            font-size: 20px;
+            background-color: #A10035;
+            border: 1px solid white;
+            border-radius: 20px;
+            color: white;
+        }
+        .contact-btn:hover{
+            width: 30%;
+            background-color: white;
+            color: #A10035;
+            /* transition-delay: 1s; */
+            transition-duration: 0.7s;
+            cursor: pointer;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Eid-ul-Adha</h1>
+            <!-- <p>___Time to Run___</p> -->
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+    <section class="main">
+        <img src="assests/pic.jpg" alt="">
+    </section>
+    <div class="cards">
+        <div class="cards123">
+            <img src="assests/pic2.jpg" alt="">
+            <div class="text-block">
+                <h1>Camel</h1>
+                <h3>What a beautiful sunrise</h3>
+            </div>
+        </div>
+        <div class="cards123">
+            <img src="assests/markhor-capra-falconeri-goat-ovis.jpg" alt="">
+            <div class="text-block">
+                <h1>Nature</h1>
+                <h3>Don't look at me</h3>
+            </div>
+        </div>
+        <div class="cards123">
+            <img src="assests/goat-billy-goat-animal-portrait-petting-zoo.jpg" alt="">
+            <div class="text-block">
+                <h1>Goat</h1>
+                <h3>What is that?</h3>
+            </div>
+        </div>
+    </div>
+    <div class="desc">
+        <h1>Eid-ul-Adha</h1>
+        <p>On the auspicious occasion of Eid Ul-Adha 2022, I wish that all your hopes and dreams
+            <br> are fulfilled by the blessings of Allah…. Happy Eid
+        </p>
+        <div class="image">
+            <img src="assests/Eid-ul-adha-images-2020-28.jpg" alt="">
+        </div>
+    </div>
+    <div class="contact">
+        <div class="contact-image">
+            <img src="assests/Eid-ul-adha-images-2020-28.jpg" alt="">
+        </div>
+        <div class="contact-card">
+            <h1>Contact us</h1>
+            <input type="text"  placeholder="Name">
+            <input type="email"  placeholder="Email">
+            <input type="password"  placeholder="Password">
+            <button class="contact-btn">Contact</button>
+        </div>
+    </div>
+</body>
+
+</html>

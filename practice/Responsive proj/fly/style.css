@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    background-image: url(assets/10702676.jpg);
+}
+
+.main-container {
+    /* background-image: url(assets/stars-png-transparent-22.png); */
+    background-color: #06224b;
+    border-radius: 24px;
+}
+
+.main-navbar {
+    border: 2px solid red;
+    border-image: linear-gradient(to left, #06224b 1%, #722DF9 50%, #06224b 100%) 100% 0 100% 0 / 3px 0 3px 0 stretch;
+}
+
+.nav-a a {
+    color: #ffffffff !important;
+}
+.nav-a li a:hover{
+    position: relative;
+}
+.nav-a li a:hover:first-child:before {
+        content:'';
+        position:absolute;
+        width:65%;
+        height:4px;
+        background:linear-gradient(to left, #722DF9,#722DF9, #9a0b72);
+        bottom: 4px;
+        right:4px;
+        border-radius: 24px;
+}
+.nav-a :hover.nav-a a i{
+    color: #722DF9 !important;
+}
+.nav-btn {
+    background-color: #722DF9;
+    outline: 0;
+    color: #ffffffff;
+    border-radius: 24px;
+    border: 0;
+    padding: 7px 20px;
+}
+
+.nav-btn:hover {
+    background-color: #722DF9;
+    box-shadow: 1px 1px 10px#ffffffff;
+    color: #ffffffff;
+    /* border-bottom: 2px solid ; */
+
+}
+.main-content-row{
+    border:  2px solid red;
+    padding: 0px 60px;
+    color: #ffffffff;
+
+}
+.main-content-col{
+    border:  2px solid rgb(0, 174, 255);
+    /* height: 100px;     */
+}
+.main-content-col a i{
+    font-size: 30px;
+    color: #722DF9;
+}
+.main-content-second-row>*{
+    border: 2px solid rgb(0, 208, 255);
+    color: #ffffffff;
+    padding: 0px 60px !important;
+    width: 100%;
+}
+.icon-col .icons{
+    border: 2px solid rgb(26, 255, 0);
+    display: flex;
+    justify-content: center;
+    padding: 15px 10px;
+}
+.icon-col .icons a{
+    background-color: #722DF9;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #ffffffff;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+.second-row-btn{
+    border: 2px solid purple;
+    display: flex;
+    justify-content: space-evenly;
+}
+.second-row-button{
+    background-color: #152e53;
+    padding: 5px 10px;
+    border-radius: 24px;
+    color: #ffffffff;
+    border:0;
+}
+.second-row-button i{
+    color: #722DF9;
+}
+.imgContainer{
+    position: relative;
+}
+.imgContainer img{
+width: 200px;
+height: 200px;
+position: absolute;
+left: 80px;
+}

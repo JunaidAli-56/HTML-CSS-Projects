@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+            .navbar{
+                background-color: rgb(7, 41, 41);
+                border-radius:17px;
+            }
+            .navbar ul{
+                overflow: auto;
+            }
+            .navbar li{
+                float: left;
+                list-style: none;
+                margin: 13px 15px;
+                padding-top: 2px;
+            }
+             .navbar li a {
+                padding: 3px 3px;
+                text-decoration: none; /* this for remove underline for home and other*/
+                color: rgb(38, 195, 195);
+           
+            }
+
+            .navbar li a:hover {
+              /* background-color: rgb(7, 23, 26); */
+              color: rgb(105, 237, 241); /*this for blink (home) and other*/
+            }
+
+            .Search{
+                float: right;
+                color:rgb(243, 210, 210);
+                padding: 11px 70px;
+                
+            }
+            .navbar input{
+                border: 2px solid rgb(75, 252, 163);
+                border-radius: 6px;
+                padding: 3px 12px;
+            }
+            .body{
+
+                background-color: rgb(2, 25, 36);
+                background-image:url(https://c4.wallpaperflare.com/wallpaper/316/351/739/movie-aquaman-amber-heard-mera-dc-comics-wallpaper-preview.jpg);
+                background-repeat: no-repeat;
+                background-size: 1137px;
+
+                
+                
+            }
+            .jarviz{
+                background-color: rgb(5, 75, 75);
+                color: rgb(0, 0, 0);
+                
+            }
+            .form{
+                color:rgb(24, 199, 184) ;
+                background-color: rgb(4, 41, 41) ;
+                width: 163px;
+                border-radius: 14px;
+                padding: 8px;
+                text-align: center;
+                
+            }
+            .if{
+                color: rgb(4, 20, 20);
+                
+            }
+            .if input {
+                background-color: rgb(16, 53, 56);
+                border-radius: 6px;
+                padding: 6px;
+            }
+            .ju{
+                background-color:rgb(16, 53, 56) ;
+                color: cyan;
+            }
+            .mj{
+                background-color:rgb(16, 70, 70) ;
+                border-radius: 8px;
+            }
+
+
+    </style>
+</head>
+<body>
+    
+    
+       <body class="body" >
+           
+       
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#"> Home</a></li>
+                <li> <a href="#">About</a> </li>
+                <li> <a href="#">Services</a> </li>
+                <li> <a href="#">Contact us</a> </li>
+                <div class="Search">
+                    <input type="text" name="Search" id="Search" placeholder="Search this website " class="jarviz">
+
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 class="form"> Aquaman 2</h2>
+    <form action="bankend.php" class="if">
+        <!-- <label for="myName" > Name</label> -->
+        <div>   
+        <input type="text" name="Name" id="myName" placeholder="NAME">
+        
+    </div>
+        <br>
+        <!-- <label for="role"> Role</label> -->
+        <div>
+            <input type="text" name="my role" id="role" placeholder="Role">
+        </div>
+        <br>
+        <!-- <label for="email">Email</label> -->
+        <div>
+            <input type="email" name="my email" id="email" placeholder="E-mail">
+        </div>
+        <br>
+         <!-- <label for="bonus">Bonus</label> -->
+         <div>
+            <input type="number" name="bonus" id="bonus" placeholder="Bonus">
+
+        </div>
+        <br>
+        <!-- <label for="date">Date</label> -->
+        <div>
+            <input type="date" name="my date" id="date">
+
+        </div>
+       
+       
+        <!--<br>
+         <label for="eligible"> Are you eligible?</label>
+        <div>
+            <input type="checkbox" name="my eligibilty" id="eligible">
+
+        </div> -->
+        <!-- <br>
+
+         <div>
+            Gender: Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender">
+            Other <input type="radio" name="mygender">
+        </div> 
+         <br> -->
+        <!-- <label for="textarea" > Write about yourself</label> -->
+        <div>
+            <br><textarea name="" cols="30" rows="10" id="textarea" class="ju" placeholder="Write About Yourself"></textarea>
+        </div> <br>
+
+        <div>
+            <label for="car">Car</label>
+            <select name="mycar" id="car" class="mj">
+                <option value="toyta"> Toyta</option>
+                <option value="civic"> Civic </option>
+            </select>
+
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+
+        </div>
+    </form>
+   
+</body>
+
+</body>
+</html>

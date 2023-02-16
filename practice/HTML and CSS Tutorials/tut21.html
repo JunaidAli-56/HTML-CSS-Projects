@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <!-- <search google font -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nerko One', cursive;
+        }
+
+        .container {
+            width: 700px;
+            border: 8px solid rgb(21, 72, 85);
+            margin: 33px auto;
+            background-color: rgb(84, 119, 119);
+
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 15px;
+            background-color: rgb(225, 199, 243);
+        }
+
+        #fruit {
+            float: left;
+            /* float:right; */
+            width: 49%;
+
+        }
+
+        #computer {
+            float: left;
+            /* float:right; */
+            width: 49%;
+        }
+
+        #stationary {
+            /* float:left; */
+            clear: both;
+            /* clear:left; */
+            /* clear:right; */
+            width: 100;
+        }
+
+        p,
+        h3 {
+            /*hamesha baad mein any wali property mani jati hai for example  ab (right) ky baad left wali mani jye g and then center*/
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+
+        h1 {
+            margin: 23px auto;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium natus
+                repellendus suscipit cum? Molestias explicabo, quod consectetur dolor aperiam perferendis obcaecati
+                debitis, numquam natus, vitae ducimus neque? Pariatur, adipisci. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Voluptates quia doloremque nesciunt veritatis velit ea, ab consequatur impedit
+                delectus, repellendus obcaecati quasi placeat. Debitis!</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium natus
+                repellendus suscipit cum? Molestias explicabo, quod consectetur dolor aperiam perferendis obcaecati
+                debitis, numquam natus, vitae ducimus neque? Pariatur, adipisci quis. Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Praesentium esse ratione maxime officiis commodi, id consectetur quam
+                molestias suscipit, laborum saepe dolore, Lorem ipsum, dolor sit amet consectetur adipisicing elit. hic
+                eum.</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium
+                natus repellendus suscipit cum? Molestias explicabo, quod consectetur dolor aperiam pe.</p>
+        </div>
+
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium natus
+                repellendus suscipit cum? Molestias explicabo, quod consectetur dolor aperiam pe.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

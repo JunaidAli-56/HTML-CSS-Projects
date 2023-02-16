@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox tutorial</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* initialize the container as a flex box */
+            display: flex;
+
+            /* Flex properties for Flex container */
+
+            /* flex-direction is row by default ,,, and flex direction ki value overwrite ho jati hai means ky first mein row mention hai agr colum write karein tu value colum hi consider ho gi agr row ko comment out na bhi karein tu koi erorr nhi */
+
+            /* flex-direction: row; */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            /* by defaut hota hai nowrap */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* short hand 2 cheezo ko1 hi jagha lihko means ky flex-flow: mein flex-direction: aur flex-wrap: 2no ki value likh saqty hein  */
+
+            /* flex-flow: row-reverse wrap; */
+
+            /* chezzo ko center krny ky liye */
+
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+
+            /* align-items: center; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            align-items: stretch;
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border:2px solid green;
+            margin: 10px;
+            padding: 3px;
+
+        }
+        #item-1 {
+             /* Flex properties for a Flex item */
+             /* oder jis ka ziayda ho ga vo box last mein jaye ga for example ab item-3ka high order hai ecliye vo last par ho ga  */
+
+             /* order: 15 ; */
+
+            /* negative number are invalid in flex-grow: */
+             /* flex-grow: 3; */
+             /* flex-shrink: means boxsize zaayda jaldi kam ho ga jis ka shrink zyada ho ga */
+             /* flex-shrink: 3; */
+             }
+             #item-2{
+                 /* order: 24; */
+                 /* flex-grow: 4; */
+                 /* flex-shrink: 4 ; */
+
+                 flex-basis: 160px;
+                 /* when flex-direction is set to row flex-basis will control width */
+                 /* when flex-direction is set to coloum flex-basis will control height */
+             }
+             #item-3{
+                 /* short hand { flex : grow shrink basis } vlaues */
+                   flex: 2 2 200px;
+                   /* align-self: flex-start; */
+                   /* align-self: flex-end; */
+                   align-self: center;
+             }
+
+
+    </style>
+</head>
+<body>
+    <h1>This is Flexbox tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+</body>
+</html>

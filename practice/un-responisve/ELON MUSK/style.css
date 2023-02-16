@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.navbar{
+    z-index: 100000;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #cc0000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px 0px 100px;
+    border-bottom: 1.5px solid #fff;
+}
+.logo1 h1{
+    color: #fff;
+    font-size: 27px;
+    font-weight: 5000; 
+    margin: 0px 40px;
+    text-align: center;
+}
+.navbar ul{
+    margin: 10px 40px 0px 0px ;
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    margin: 0px 5px;
+}
+.navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 7px 10px;
+    border-radius: 4px;
+    transition: all 0.7s ease;
+}
+.navbar ul li a:hover{
+        color: #cc0000;
+        transition: all 0.7s ease;
+        background: #fff;
+    
+}
+.navbar .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    margin: 0px 40px;
+}
+#click{
+    display: none;
+}
+@media (max-width:753px){
+    .navbar .menu-btn i{
+        display: block;
+    }
+    #click:checked~.menu-btn i:before{
+        content: "\f00d";
+    }
+    .navbar ul{
+        position: fixed;
+        top: 70px;
+        right: 0;
+        border-radius: 0px 0px 0px  20px;
+        /* background:linear-gradient( #8f0130,#000000,#8f0130); */
+        background-color:#fff;
+        height: 70.3vh;
+        width: 100%;
+        display: block;
+        text-align: center;  
+        right: -100%;
+        transition: all 0.7s ease;
+    }
+    #click:checked~ul{
+        right: 0%;
+    }
+    .navbar ul li{
+        margin-top: 40px;
+    }
+    .navbar ul li a{
+        font-size: 25px;
+        font-weight: 600;
+        display: block;
+        color:#cc0000;
+    }
+    .navbar ul li a:hover{
+        color:#d61c4eb2;
+        background: none;
+}
+}
+.main{
+    height: 480px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cc0000;
+}
+.main-heading{
+    font-size:xx-large;
+    letter-spacing: 30px;
+    color: #fff;
+}
+.info{
+    padding: 0px 30px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    box-sizing: border-box;
+    height: 354px;
+    background-color: #cc0000;
+}
+.img{
+    top: -50px;
+    height: 400px;
+    width: 300px;
+    position: relative;
+}
+.img img{
+    background-color: #fff;
+    padding: 20px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.card-info{
+    padding: 10px 30px;
+    height: 350px;
+    width: 837px;
+    background-color: #fff;
+}
+.card-info h1{
+    color: #cc0000;
+}
+.card-info button{
+    background-color: #cc0000;
+    height: 40px;
+    width: 80px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.card-info button:hover{
+    border: 1px solid #cc0000;
+    color: #cc0000;
+    transition: all 0.7s ease;
+    background: none;
+}
+.end{
+    display: flex;
+    justify-content: center;
+    background-color: #cc0000;
+}
+.end-bg{
+    margin-top: -4px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(239, 239, 239);
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.end-bg div{
+    height: 70px;
+    width: 120px;
+    position: relative;
+}
+.end div img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.company-heading{
+    text-align: center;
+    font-size: 27px;
+    width: 100%;
+    color: #fff;
+    background-color: #cc0000;
+    padding: 10px 0px;
+}
+.card-outer-div{
+    background:#cc0000;
+    display: flex;
+    justify-content: space-around;
+}
+.cards{
+    padding: 20px 0px ;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.cards .card1{
+    height: 350px;
+    width: 30%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cards .card1 .image-card{
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+.cards .card1 .image-card img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.cards .card2{
+    height: 450px;
+    width: 30%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cards .card2 .image-card{
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+.cards .card2 .image-card img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.cards .card3{
+    height: 550px;
+    width: 30%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cards .card3 .image-card{
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+.cards .card3 .image-card img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.card-text{
+    color: #cc0000;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 50000;
+}
+.slider-outer-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #cc0000;
+}
+.slider{
+   width: 90%;
+  
+}
+.carousel-inner{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.end-contanier-outer-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #cc0000;
+}
+.end-contanier{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    background-color: #fff;
+    background-color: #cc0000;
+}
+.first{
+    height: 200px;
+    width: 120px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cc0000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact{
+    height: 400px;
+    width: 280px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact h1{
+    color: #cc0000;
+    margin: 30px 0px 20px 0px;
+}
+.contact input{
+    margin-top: 20px;
+    height: 35px;
+    width: 85%;
+    border: 2px solid #cc0000;
+    padding: 5px;
+    border-radius: 2px;
+    outline: none;
+}
+.contact input::placeholder{
+color: #740707;
+}
+.contact button{
+    margin-top: 25px;
+    height: 35px;
+    width: 80px;
+    color: #fff;
+    background: #cc0000;
+    border: none;
+}
+.contact button:hover{
+    border: 1px solid #cc0000;
+    color: #cc0000;
+    transition: all 0.7s ease;
+    background: none;
+}
+.about{
+    height: 550px;
+    width: 300px;
+    padding: 10px 20px; 
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.about h4{
+    margin-top: 40px;
+    color: #cc0000;
+}
+.about button{
+    height: 35px;
+    width: 80px;
+    color: #fff;
+    background: #cc0000;
+    border: none;
+}
+.about button:hover{
+    border: 1px solid #cc0000;
+    color: #cc0000;
+    transition: all 0.7s ease;
+    background: none;
+}
+.image{
+    height: 400px;
+    width: 280px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.image img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+footer{
+    border-top: 1.5px solid #fff;
+    display: flex;
+    background-color: #cc0000;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.social-div{
+    display: flex;
+    height: 45px;
+    margin-top: 15px;
+    margin-left: 20px;
+
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    color: #fff; 
+    margin-left: 20px;
+    border-radius: 300px;
+    
+}
+.fa-brands{
+    display: flex;
+    font-size: 25px;
+    text-align: center;
+}
+.social-media:hover{
+    box-shadow: -1px 3px  30px 8px #fff;  
+}
+.fa-brands:hover{
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.heading{
+    text-align: center;
+    margin-right:30px;
+    color: #fff;
+    align-items: center;
+    padding-top: 10px
+}
+.heading p{
+    font-size: 10px;
+    color: #fff;
+}

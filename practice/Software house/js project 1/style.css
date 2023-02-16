@@ -1,0 +1,16 @@
+.multi-div{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 174, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 8px;
+}
+#div-id{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}

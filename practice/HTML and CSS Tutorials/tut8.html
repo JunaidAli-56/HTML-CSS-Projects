@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* background-color:  black;
+            color:rgb(14, 255, 255) ; */
+            background-image: url(amber.png.jpg);
+            
+        }
+        /* input{
+            background-color: rgb(18, 96, 116);
+            border: 4px cyan;
+            color: rgb(14, 255, 255) ; 
+            
+            
+        }*/
+        /* textarea{
+            background-color: rgb(18, 96, 116);
+            border: 4px cyan;
+            color: rgb(14, 255, 255) ;
+        } */
+
+    </style>
+</head>
+<body>
+    <h2>This is Html forms tutorial</h2>
+    <form action="bankend.php">
+        <label for="name"> Name</label>
+        <div>
+            <input type="text" name="my name" id="name">
+        </div>
+        <br>
+        <label for="role"> Role</label>
+        <div>
+            <input type="text" name="my role" id="role">
+        </div>
+        <br>
+        <label for="email">Email</label>
+        <div>
+            <input type="email" name="my email" id="email">
+        </div>
+        <br>
+        <label for="date">Date</label>
+        <div>
+            <input type="date" name="my date" id="date">
+
+        </div>
+        <br>
+        <label for="bonus">Bonus</label>
+        <div>
+            <input type="number" name="bonus" id="bonus">
+
+        </div>
+        <br>
+        <label for="eligible"> Are you eligible?</label>
+        <div>
+            <input type="checkbox" name="my eligibilty" id="eligible">
+
+        </div>
+        <br>
+
+        <div>
+            Gender: Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender">
+            Other <input type="radio" name="mygender">
+        </div>
+        <br>
+        <label for="textarea"> Write about yourself</label>
+        <div>
+            <br>
+            <textarea name="" cols="30" rows="10" id="textarea"></textarea>
+        </div>
+         <br>
+
+        <div>
+            <label for="car">Car</label>
+            <select name="mycar" id="car">
+                <option value="toyta"> Toyta</option>
+                <option value="civic"> Civic </option>
+            </select>
+
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit" value="Submit Now" onclick="fun()">
+            <input type="reset" value="Reset Now">
+
+        </div>
+    </form>
+    <script src="tut8.js"></script>
+</body>
+
+</html>
